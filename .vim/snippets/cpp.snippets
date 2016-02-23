@@ -1,0 +1,57 @@
+# std::map
+snippet map
+	map< ${1:int}, ${2:int} > ${3:m};
+snippet multimap
+	map< ${1:int}, ${2:int} > ${3:m};
+snippet list
+	list< ${1:int} > ${2:l};
+snippet queue
+	queue< ${1:int} > ${2:q};
+snippet stack
+	stack< ${1:int} > ${2:s};
+# std::vector
+snippet vector
+	vector< ${1:int} > ${2};
+# std::set
+snippet set
+	set< ${1:int} > ${2};
+# Namespace
+snippet ns
+	namespace ${1:`Filename('', 'my')`} {
+		${2}
+	} /* $1 */
+# Class
+snippet cl
+	class ${1:`Filename('$1_t', 'name')`} {
+	public:
+		$1 ( ${2:arguments} );
+		virtual ~$1 ();
+	
+	private:
+		${3:/* data */}
+	};
+# #include <...>
+snippet inc
+	#include <${1:cstdio}>${2}
+snippet use
+	using namespace ${1:std};
+snippet forset
+	for (set< ${2:int} >::iterator ${3:it} = ${1:s}.begin(); $3 != $1.end(); ++$3) {
+		${4}
+	}
+snippet forvector
+	for (vector< ${2:int} >::iterator ${3:it} = ${1:v}.begin(); $3 < $1.end(); ++$3) {
+		${4}
+	}
+snippet formap
+	for (map< ${2:int}, ${3:int} >::iterator ${4:it} = ${1:m}.begin(); $4 != $1.end(); ++$4) {
+		${5}
+	}
+snippet formultimap
+	for (multimap< ${2:int}, ${3:int} >::iterator ${4:it} = ${1:m}.begin(); $4 != $1.end(); ++$4) {
+		${5}
+	}
+snippet forlist
+	for (list< ${2:int} >::iterator ${3:it} = ${1:m}.begin(); $3 != $1.end(); ++$3) {
+		${4}
+	}

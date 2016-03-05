@@ -1,0 +1,78 @@
+"*":
+  Zen:
+    minimap: true
+    showWordCount: "Left"
+    softWrap: true
+    width: 100
+  "autocomplete-python":
+    extraPaths: "$PROJECT/env/Lib/site-packages"
+  core:
+    autoHideMenuBar: true
+    disabledPackages: [
+      "language-vue"
+      "atom-jinja2"
+    ]
+    themes: [
+      "one-dark-ui"
+      "solarized-dark-syntax"
+    ]
+  editor:
+    invisibles: {}
+  "exception-reporting":
+    userId: "f3a1c0d0-fc66-8cdf-c742-d11dff475409"
+  latex:
+    outputDirectory: "build"
+    texPath: "C:\\texlive\\2015\\bin\\win32\\tex"
+  linter:
+    errorPanelHeight: 149
+  "linter-chktex":
+    executablePath: "C:\\texlive\\2015\\bin\\win32\\chktex"
+  "linter-flake8": {}
+  "linter-jshint": {}
+  "markdown-preview":
+    breakOnSingleNewline: true
+    useGitHubStyle: true
+  minimap: {}
+  "one-dark-ui": {}
+  "one-light-ui": {}
+  "spell-check":
+    grammars: [
+      "text.tex.latex"
+    ]
+  "todo-show":
+    showInTable: [
+      "Type"
+      "Text"
+      "File"
+      "Line"
+    ]
+    sortAscending: false
+    sortBy: "File"
+  "vim-mode":
+    useSmartcaseForSearch: true
+  welcome:
+    showOnStartup: false
+".basic.html.text":
+  editor:
+    scrollPastEnd: false
+    showIndentGuide: true
+    showInvisibles: false
+    tabLength: 2
+".bibtex.text":
+  editor:
+    scrollPastEnd: true
+    softWrap: true
+    softWrapAtPreferredLineLength: true
+".js.regexp.replacement.source":
+  editor:
+    scrollPastEnd: true
+    showIndentGuide: true
+    tabLength: 2
+".js.regexp.source":
+  editor:
+    tabLength: 2
+".json.source":
+  editor:
+    scrollPastEnd: true
+    showIndentGuide: true
+    tabLength: 2
